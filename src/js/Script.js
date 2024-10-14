@@ -3,7 +3,7 @@ $(document).ready(function() {
   // Asignar un controlador de eventos al botón
   $("#login").click(function() {
     // Redirigir al usuario a otro HTML
-    window.location.href = "Home.html";
+    window.location.href = "/src/pages/Home.html";
   });
 });
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
     localStorage.setItem("#re_direccion",direccion);
 
     // Redirigir al usuario a otro HTML
-    window.location.href = "Login.html";
+    window.location.href = "/src/pages/Login.html";
   });
 });
 
@@ -132,14 +132,14 @@ $(document).ready(function() {
 
 // cambio imagenes
 $("#botonUser1").click(function () {
-  var rutaImagen = "imagenes/user1.png";
-  $("#imagen").attr("src", "imagenes/user1.png")
+  var rutaImagen = "/img/user1.png";
+  $("#imagen").attr("src", "/img/user1.png")
   localStorage.setItem("rutaImagen", rutaImagen);
 });
 
 $("#botonUser2").click(function () {
-  var rutaImagen = "imagenes/user2.png";
-  $("#imagen").attr("src", "imagenes/user2.png");
+  var rutaImagen = "/img/user2.png";
+  $("#imagen").attr("src", "/img/user2.png");
   localStorage.setItem("rutaImagen", rutaImagen);
 });
 
